@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Add Items</title>
+        <link rel="stylesheet" href="styles.css" />
+        <!-- <script src="store.js" async></script> -->
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    </head>
+    <body>
+        <header class="main-header">
+            <nav class="main-nav nav">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="cart.html">CART</a></li>
+                    <li><a href="#  ">ABOUT</a></li>
+                </ul>
+            </nav>
+            <h1 class="band-name band-name-large">vendor list</h1>
+        </header>
+        <section class="container content-section">
+            <h2 class="section-header">Deal with different vendors that best suits you</h2>
+            <div class="shop-items">
+
+
+
+
+                <div class="shop-item">
+                    <span class="shop-item-title">Product 1</span>
+                    <img class="shop-item-image" src="Images/item1.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$12</span>
+                        
+                     <a  class="btn btn-primary" onclick="setCookie('rem-1','add-1','Product 1+12')" id="add-1">Add To Cart</a>
+                     <a class="btn btn-primary" onclick="remCookie('rem-1','add-1','Product 1+12')" style="visibility: hidden;" id="rem-1">Remove From Cart</a>
+                        <!-- <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button> -->
+                    </div>
+                </div>
+
+
+
+
+
+                <div class="shop-item">
+                    <span class="shop-item-title">Product 2</span>
+                    <img class="shop-item-image" src="Images/item2.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$14</span>
+                        <a  class="btn btn-primary" onclick="setCookie('rem-2','add-2','Product 2+14')" id="add-2">Add To Cart</a>
+                        <a class="btn btn-primary" onclick="remCookie('rem-2','add-2','Product 2+14')" style="visibility: hidden;" id="rem-2">Remove From Cart</a>
+                        <!-- <button class="btn btn-primary shop-item-button"type="button">ADD TO CART</button> -->
+                    </div>
+                </div>
+
+
+
+
+
+                <div class="shop-item">
+                    <span class="shop-item-title">Product 3</span>
+                    <img class="shop-item-image" src="Images/item3.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$9</span>                   
+                            <a  class="btn btn-primary" onclick="setCookie('rem-3','add-3','Product 3+9')" id="add-3">Add To Cart</a>
+                            <a class="btn btn-primary" onclick="remCookie('rem-3','add-3','Product 3+9')" style="visibility: hidden;" id="rem-3">Remove From Cart</a>
+                        <!-- <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button> -->
+                    </div>
+                </div>
+
+
+
+
+
+                <div class="shop-item">
+                    <span class="shop-item-title">Product 4</span>
+                    <img class="shop-item-image" src="Images/item4.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$19</span>
+                        <a  class="btn btn-primary" onclick="setCookie('rem-4','add-4','Product 4+19')" id="add-4">Add To Cart</a>
+                        <a class="btn btn-primary" onclick="remCookie('rem-4','add-4','Product 4+19')" style="visibility: hidden;" id="rem-4">Remove From Cart</a>
+                            <!-- <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button> -->
+                    </div>
+                </div>
+
+
+
+            </div>
+        </section>
+
+
+        <script src="scripts.js" defer = "true"></script>
+
+
+
+        <footer class="main-footer">
+            <div class="container main-footer-container">
+                <h3 class="band-name">Add items</h3>
+            </div>
+        </footer>
+    </body>
+</html>
